@@ -25,13 +25,13 @@
   </body>
   <script src="/socket.io/socket.io.js"></script>
   <script>
-    
+     var socket=io();
     // var name=""
     name=prompt("enter our name","admin")
-    var socket
+    // var socket
 
     if(name!="null"){
-            socket=io();
+           
 
             socket.emit('user-name',name)
 
